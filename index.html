@@ -125,20 +125,20 @@
 	function gray() { 
 		console.log("In grayscale");
 		// Utilize the existing grayscale class.
-		document.getElementById('myVideo').style.filter = 'grayscale(1)';
+		document.getElementById('myVideo').classList.add('grayscale');
 
 	}
 	function color() {
 		console.log("In color");
 		// Remove the existing grayscale class.
-		document.getElementById('myVideo').style.filter = 'grayscale(0)';
+		document.getElementById('myVideo').classList.remove('grayscale');
 
 	} 
 	function random(){
 		// Use setProperty to change the grayscale filter and transform properties of the video.
 		// Log what the new values are to the console.
 		var random_amt = Math.random()*100;
-		document.getElementById('myVideo').style.setProperty('filter', 'grayscale(' + random_amt + ')');
+		document.getElementById('myVideo').style.setProperty('filter', 'grayscale(' + random_amt + '%)');
 		document.getElementById('myVideo').style.setProperty('transform', 'skewX(' + random_amt + 'deg)');
 		console.log('Grayscale and skewX are ' + random_amt)
 
