@@ -18,20 +18,20 @@
 		button{
 			margin-bottom: 5px;
 		}
-		.play {
+/* 		.play {
 			background-image: url('images/play-button.png');
     			background-size: 100px 100px;
     			height: 100px;  
     			width: 100px;
-/* 			-webkit-text-fill-color: transparent; */
+			-webkit-text-fill-color: transparent;
 		}
 		.pause {
 			background-image: url('images/pause-button.png');
     			background-size: 100px 100px;
     			height: 100px;  
     			width: 100px;
-/* 			-webkit-text-fill-color: transparent; */
-		}
+			-webkit-text-fill-color: transparent;
+		} */
 
 		/*You can not change anything in the style tag other than to add images for the buttons. */
 </style>
@@ -39,8 +39,8 @@
 <body> 
 <main>
 	<h1>JavaScript Video Controls</h1>
-	<button onclick="playVid()" type="button" class = "play">Play Video</button>
-	<button onclick="pauseVid()" type="button" class = "pause">Pause Video</button><br>
+	<button onclick="playVid()" type="button" class = "play">Play Video<img src="images/pause-button.png"></button>
+	<button onclick="pauseVid()" type="button" class = "pause">Pause Video<img src="images/pause-button.png"></button><br>
 	<button onclick="slowSpeed()" type="button">Slow Down</button>
 	<button onclick="increaseSpeed()" type="button">Speed Up</button><br>
 
